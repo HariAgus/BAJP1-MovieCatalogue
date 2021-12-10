@@ -5,21 +5,29 @@ import android.os.Bundle
 import android.provider.Settings
 import androidx.appcompat.app.AppCompatActivity
 import com.hariagus.submission1moviecataloge.R
+import com.hariagus.submission1moviecataloge.databinding.ActivityHomeBinding
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityHomeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setSupportActionBar(binding.toolbarHome)
 
-        setSupportActionBar(toolbarHome)
+        val viewPageAdapter = HomeViewPagerAdapter(
+            this, supportFragmentManager
+        )
 
-        val viewPageAdapter = HomeViewPagerAdapter(this, supportFragmentManager)
-        homeViewPager.adapter = viewPageAdapter
-        tabLayoutHome.setupWithViewPager(homeViewPager)
+        binding.apply {
+            homeViewPager.adapter = viewPageAdapter
+            tabLayoutHome.setupWithViewPager(homeViewPager)
+        }
 
-        ivChangeLanguage.setOnClickListener {
+        binding.ivChangeLanguage.setOnClickListener {
             val intent = Intent(Settings.ACTION_LOCALE_SETTINGS)
             startActivity(intent)
         }
