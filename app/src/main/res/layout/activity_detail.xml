@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/imgDetail"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:layout_margin="16dp"
+        android:src="@color/purple_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgDetail"
+        app:layout_constraintTop_toTopOf="@id/imgDetail">
+
+        <TextView
+            android:id="@+id/tvTitleDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            tools:text="@string/title" />
+
+        <TextView
+            android:id="@+id/tvReleaseDateDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/textColor"
+            tools:text="@string/sample_release" />
+
+        <TextView
+            android:id="@+id/tvCategoryDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/textColor"
+            tools:text="@string/category" />
+
+        <TextView
+            android:id="@+id/tvDurationDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/textColor"
+            tools:text="2h 40m" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/desc"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/imgDetail" />
+
+    <TextView
+        android:id="@+id/tvDescDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_desc"
+        tools:layout_editor_absoluteX="16dp"
+        tools:text="@string/desc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
