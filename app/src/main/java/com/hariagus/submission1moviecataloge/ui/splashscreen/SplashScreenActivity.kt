@@ -5,10 +5,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.hariagus.submission1moviecataloge.R
 import com.hariagus.submission1moviecataloge.databinding.ActivitySplashScreenBinding
 import com.hariagus.submission1moviecataloge.ui.home.HomeActivity
-import com.hariagus.submission1moviecataloge.utils.Const.Companion.DELAY_MOVE
+import com.hariagus.submission1moviecataloge.utils.Const.DELAY_MOVE
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {

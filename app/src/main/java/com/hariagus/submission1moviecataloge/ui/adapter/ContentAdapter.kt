@@ -15,9 +15,7 @@ import com.hariagus.submission1moviecataloge.ui.detail.DetailItemActivity.Compan
 import com.hariagus.submission1moviecataloge.ui.detail.DetailItemActivity.Companion.ID_DATA
 import com.hariagus.submission1moviecataloge.utils.loadImageGlide
 
-class ContentAdapter(
-    private val idAdapter: Int
-) : RecyclerView.Adapter<ContentAdapter.ViewHolder>() {
+class ContentAdapter(private val idAdapter: Int) : RecyclerView.Adapter<ContentAdapter.ViewHolder>() {
 
     private var listData = ArrayList<MovieEntity>()
 

@@ -45,11 +45,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/background"
-        app:tabTextColor="@color/textColor"
-        app:tabSelectedTextColor="@color/primary"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appbarHome" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbarHome"
+        app:tabSelectedTextColor="@color/primary"
+        app:tabTextColor="@color/textColor" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/homeViewPager"
