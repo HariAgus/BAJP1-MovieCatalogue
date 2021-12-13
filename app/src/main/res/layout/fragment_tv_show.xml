@@ -9,9 +9,24 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTvShow"
-        tools:listitem="@layout/item_list"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_list" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieEmptyDataTvShow"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/empty_data" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,26 +29,28 @@ class DetailItemActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val movieViewModel = ViewModelProvider(
-            this, ViewModelProvider.NewInstanceFactory()
-        ).get(MovieViewModel::class.java)
-        val tvShowViewModel = ViewModelProvider(
-            this, ViewModelProvider.NewInstanceFactory()
-        ).get(TvShowViewModel::class.java)
-
         when (intent.getIntExtra(CLICK, 0)) {
-            MOVIE -> dataDetail(
-                movieViewModel.detailMovie(
-                    intent.getIntExtra(ID_DATA, 0)
+            MOVIE -> {
+                val movieViewModel = ViewModelProvider(
+                    this, ViewModelProvider.NewInstanceFactory()
+                ).get(MovieViewModel::class.java)
+                dataDetail(
+                    movieViewModel.detailMovie(
+                        intent.getIntExtra(ID_DATA, 0)
+                    )
                 )
-            )
-            TV_SHOW -> dataDetail(
-                tvShowViewModel.detailTvShow(
-                    intent.getIntExtra(ID_DATA, 0)
+            }
+            TV_SHOW -> {
+                val tvShowViewModel = ViewModelProvider(
+                    this, ViewModelProvider.NewInstanceFactory()
+                ).get(TvShowViewModel::class.java)
+                dataDetail(
+                    tvShowViewModel.detailTvShow(
+                        intent.getIntExtra(ID_DATA, 0)
+                    )
                 )
-            )
+            }
         }
-
     }
 
     private fun dataDetail(dataMovie: MovieEntity) {
