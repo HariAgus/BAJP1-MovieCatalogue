@@ -1,10 +1,10 @@
 package com.hariagus.submission1moviecataloge.ui.tvshow
 
 import com.hariagus.submission1moviecataloge.model.MovieEntity
-import org.junit.Test
-
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
 import org.junit.Before
+import org.junit.Test
 
 class TvShowViewModelTest {
 
@@ -12,12 +12,14 @@ class TvShowViewModelTest {
     private lateinit var movieEntity: MovieEntity
     private val id = 0
     private val title = "The Good Doctor"
-    private val description = "A young surgeon with Savant syndrome is recruited into the surgical unit of a prestigious hospital. " +
-                 "The question will arise: can a person who doesn't have the ability to relate to people actually save their lives?"
+    private val description =
+        "A young surgeon with Savant syndrome is recruited into the surgical unit of a prestigious hospital. " +
+                "The question will arise: can a person who doesn't have the ability to relate to people actually save their lives?"
     private val category = "Drama"
     private val release = "2017"
     private val duration = "42m"
-    private val image = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6tfT03sGp9k4c0J3dypjrI8TSAI.jpg"
+    private val image =
+        "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6tfT03sGp9k4c0J3dypjrI8TSAI.jpg"
 
     @Before
     fun setUp() {

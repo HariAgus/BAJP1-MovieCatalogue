@@ -3,9 +3,6 @@ package com.hariagus.submission1moviecataloge.ui.detail
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
-import com.hariagus.submission1moviecataloge.R
 import com.hariagus.submission1moviecataloge.databinding.ActivityDetailBinding
 import com.hariagus.submission1moviecataloge.model.MovieEntity
 import com.hariagus.submission1moviecataloge.ui.movie.MovieFragment.Companion.MOVIE
@@ -13,7 +10,6 @@ import com.hariagus.submission1moviecataloge.ui.movie.MovieViewModel
 import com.hariagus.submission1moviecataloge.ui.tvshow.TvShowFragment.Companion.TV_SHOW
 import com.hariagus.submission1moviecataloge.ui.tvshow.TvShowViewModel
 import com.hariagus.submission1moviecataloge.utils.loadImageGlide
-import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailItemActivity : AppCompatActivity() {
 
@@ -61,6 +57,7 @@ class DetailItemActivity : AppCompatActivity() {
             tvDurationDetail.text = dataMovie.duration
             tvDescDetail.text = dataMovie.description
             loadImageGlide(dataMovie.image, imgDetail)
+            loadImageGlide(dataMovie.backdrops, imgBackdrop)
         }
     }
 

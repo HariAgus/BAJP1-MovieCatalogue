@@ -16,7 +16,8 @@ object DataMovies {
                 "Action, Adventure",
                 "14 February 2019",
                 "2h 42m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg",
+                "https://www.themoviedb.org/t/p/original/aQXTw3wIWuFMy0beXRiZ1xVKtcf.jpg"
             )
         )
         movies.add(
@@ -27,7 +28,8 @@ object DataMovies {
                 "Action, Adventure",
                 "12 December 2018",
                 "2h 24m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/9QusGjxcYvfPD1THg6oW3RLeNn7.jpg"
             )
         )
         movies.add(
@@ -38,7 +40,8 @@ object DataMovies {
                 "Action",
                 "07 July 2017",
                 "2h 13m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+                "https://www.themoviedb.org/t/p/w500_and_h282_face/7snXgpmWghs6IDmpOCgZkW0X73A.jpg"
             )
         )
         movies.add(
@@ -49,7 +52,8 @@ object DataMovies {
                 "Action, Animation",
                 "15 March 2008",
                 "1h 57m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mZEx58GIKIFXzYVy9txEgObKA8X.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/mZEx58GIKIFXzYVy9txEgObKA8X.jpg",
+                "https://www.themoviedb.org/t/p/w220_and_h330_face/mZEx58GIKIFXzYVy9txEgObKA8X.jpg"
             )
         )
         movies.add(
@@ -60,7 +64,8 @@ object DataMovies {
                 "Comedy",
                 "20 January 2006",
                 "1h 38m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bVcC7tIxJQULEHP8mfzzJ4PG1I1.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bVcC7tIxJQULEHP8mfzzJ4PG1I1.jpg",
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vtdtF2mAnUo80c8ZpPzqrQVb6VO.jpg"
             )
         )
         movies.add(
@@ -71,7 +76,8 @@ object DataMovies {
                 "Action",
                 "23 October 2020",
                 "1h 38m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ugZW8ocsrfgI95pnQ7wrmKDxIe.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ugZW8ocsrfgI95pnQ7wrmKDxIe.jpg",
+                "https://www.themoviedb.org/t/p/original/d0yeb7JgmuYwlfX2MKV7tK6vAZr.jpg"
             )
         )
         movies.add(
@@ -82,7 +88,8 @@ object DataMovies {
                 "Documentary",
                 "18 September 2018",
                 "52m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uTPz3y7vuavVYGhc2ciJtJI41Y7.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uTPz3y7vuavVYGhc2ciJtJI41Y7.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/j90dEmjyAi8Mb159je6OpN9YD5X.jpg"
             )
         )
         movies.add(
@@ -93,7 +100,8 @@ object DataMovies {
                 "Documentary",
                 "16 March 2011",
                 "58m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lEoyMEmbj61dObfjl18bmORrha6.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lEoyMEmbj61dObfjl18bmORrha6.jpg",
+                "https://www.themoviedb.org/t/p/w220_and_h330_face/lEoyMEmbj61dObfjl18bmORrha6.jpg"
             )
         )
         movies.add(
@@ -104,7 +112,8 @@ object DataMovies {
                 "Drama, Horror",
                 "27 November 2020",
                 "1h 53m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eAUzmhP54bE1vPXaY7FbuZREJlR.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eAUzmhP54bE1vPXaY7FbuZREJlR.jpg",
+                "https://www.themoviedb.org/t/p/w500_and_h282_face/uVDMUyOCxejagwXQDPTn6o9pjJj.jpg"
             )
         )
         movies.add(
@@ -115,7 +124,8 @@ object DataMovies {
                 "Drama, Romance",
                 "16 April 2020",
                 "1h 46m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5mCqEeBA0MW7H6akFrFQXJu68rU.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5mCqEeBA0MW7H6akFrFQXJu68rU.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/zRc6SG8V8WTTDrmZ78PgqjwYqoN.jpg"
             )
         )
         return movies

@@ -6,10 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.hariagus.submission1moviecataloge.R
 import com.hariagus.submission1moviecataloge.databinding.FragmentTvShowBinding
 import com.hariagus.submission1moviecataloge.ui.adapter.ContentAdapter
-import kotlinx.android.synthetic.main.fragment_tv_show.*
 
 class TvShowFragment : Fragment() {
 

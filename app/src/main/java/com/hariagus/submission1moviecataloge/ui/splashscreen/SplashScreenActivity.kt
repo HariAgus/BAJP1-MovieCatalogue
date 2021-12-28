@@ -21,6 +21,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         Handler(mainLooper).postDelayed({
             startActivity(Intent(this, HomeActivity::class.java))
+            finishAffinity()
         }, DELAY_MOVE)
     }
 }

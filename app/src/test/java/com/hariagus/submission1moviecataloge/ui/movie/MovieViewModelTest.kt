@@ -1,7 +1,8 @@
 package com.hariagus.submission1moviecataloge.ui.movie
 
 import com.hariagus.submission1moviecataloge.model.MovieEntity
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
 import org.junit.Before
 import org.junit.Test
 
@@ -20,7 +21,6 @@ class MovieViewModelTest {
     private val duration = "2h 42m"
     private val image =
         "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg"
-
 
     @Before
     fun setUp() {

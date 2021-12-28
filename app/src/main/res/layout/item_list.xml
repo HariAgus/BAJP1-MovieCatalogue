@@ -16,7 +16,7 @@
         <ImageView
             android:id="@+id/ivMovie"
             android:layout_width="110dp"
-            android:layout_height="140dp"
+            android:layout_height="0dp"
             android:scaleType="centerCrop"
             android:src="@color/purple_700"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +25,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_16dp"
             android:padding="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -45,23 +46,60 @@
                 tools:layout_editor_absoluteX="8dp"
                 tools:text="@string/title" />
 
-            <TextView
-                android:id="@+id/tvReleaseDate"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:id="@+id/ll_release"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/textColor"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@id/ivMovie"
                 app:layout_constraintTop_toBottomOf="@id/tvTitleMovie"
-                tools:text="@string/sample_release" />
+                tools:ignore="NotSibling">
 
-            <TextView
-                android:id="@+id/tvCategory"
-                android:layout_width="match_parent"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_22dp"
+                    android:src="@drawable/ic_date" />
+
+                <TextView
+                    android:id="@+id/tvReleaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:fontFamily="@font/poppins"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    tools:text="@string/sample_release" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/textColor"
-                app:layout_constraintTop_toBottomOf="@id/tvReleaseDate"
-                tools:text="@string/category" />
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@id/ivMovie"
+                app:layout_constraintTop_toBottomOf="@id/ll_release"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_22dp"
+                    android:src="@drawable/ic_category" />
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:fontFamily="@font/poppins"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    tools:text="@string/category" />
+
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
