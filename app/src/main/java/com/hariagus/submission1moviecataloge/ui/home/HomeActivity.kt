@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
 import androidx.appcompat.app.AppCompatActivity
-import com.hariagus.submission1moviecataloge.R
 import com.hariagus.submission1moviecataloge.databinding.ActivityHomeBinding
-import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container_detail"
@@ -7,86 +7,196 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <ImageView
-        android:id="@+id/imgDetail"
-        android:layout_width="150dp"
-        android:layout_height="210dp"
-        android:layout_margin="16dp"
-        android:src="@color/purple_700"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/linearLayoutFirst"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imgDetail"
-        app:layout_constraintTop_toTopOf="@id/imgDetail">
+        <ImageView
+            android:id="@+id/imgBackdrop"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:foregroundTint="@color/black"
+            android:foregroundTintMode="add"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="@dimen/dimen_8dp"
+            app:cardElevation="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgBackdrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgBackdrop">
+
+            <ImageView
+                android:id="@+id/imgDetail"
+                android:layout_width="@dimen/dimen_150dp"
+                android:layout_height="@dimen/dimen_210dp"
+                android:contentDescription="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg"
+                android:scaleType="centerCrop"
+                android:src="@color/purple_700" />
+
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/tvTitleDetail"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
             android:fontFamily="@font/poppins_bold"
             android:textColor="@color/textColor"
-            android:textSize="20sp"
+            android:textSize="@dimen/tvs_24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cvImageView"
+            app:layout_constraintTop_toBottomOf="@id/imgBackdrop"
             tools:text="@string/title" />
 
+        <LinearLayout
+            android:id="@+id/linearLayoutFirst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvImageView">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/desc"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/tvs_18sp" />
+
+            <View
+                android:id="@+id/viewDescOne"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_22dp"
+                    android:src="@drawable/ic_date" />
+
+                <TextView
+                    android:id="@+id/tvReleaseDateDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/textColor"
+                    tools:text="@string/sample_release" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_22dp"
+                    android:src="@drawable/ic_category" />
+
+                <TextView
+                    android:id="@+id/tvCategoryDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/textColor"
+                    tools:text="@string/category" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_22dp"
+                    android:src="@drawable/ic_time" />
+
+                <TextView
+                    android:id="@+id/tvDurationDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    tools:text="2h 40m" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
         <TextView
-            android:id="@+id/tvReleaseDateDetail"
+            android:id="@+id/textView_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/overview"
             android:textColor="@color/textColor"
-            tools:text="@string/sample_release" />
+            android:textSize="@dimen/tvs_18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutFirst" />
+
+        <View
+            android:id="@+id/viewDesc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_desc" />
 
         <TextView
-            android:id="@+id/tvCategoryDetail"
-            android:layout_width="wrap_content"
+            android:id="@+id/tvDescDetail"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
             android:fontFamily="@font/poppins"
-            android:textColor="@color/textColor"
-            tools:text="@string/category" />
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewDesc"
+            tools:layout_editor_absoluteX="16dp"
+            tools:text="@string/desc" />
 
-        <TextView
-            android:id="@+id/tvDurationDetail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:textColor="@color/textColor"
-            tools:text="2h 40m" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="@string/desc"
-        android:textColor="@color/textColor"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/imgDetail" />
-
-    <TextView
-        android:id="@+id/tvDescDetail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/poppins"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_desc"
-        tools:layout_editor_absoluteX="16dp"
-        tools:text="@string/desc" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

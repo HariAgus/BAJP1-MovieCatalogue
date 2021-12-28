@@ -16,7 +16,8 @@ object DataTVShow {
                 "Drama",
                 "2017",
                 "42m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6tfT03sGp9k4c0J3dypjrI8TSAI.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6tfT03sGp9k4c0J3dypjrI8TSAI.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/9OYu6oDLIidSOocW3JTGtd2Oyqy.jpg"
             )
         )
         tvMovies.add(
@@ -27,18 +28,20 @@ object DataTVShow {
                 "Action & Adventure",
                 "2019",
                 "35m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/9ijMGlJKqcslswWUzTEwScm82Gs.jpg"
             )
         )
         tvMovies.add(
             MovieEntity(
                 2,
-                "Fear the Walking Dead ",
+                "Fear the Walking Dead",
                 "What did the world look like as it was transforming into the horrifying apocalypse depicted in \"The Walking Dead\"? This spin-off set in Los Angeles, following new characters as they face the beginning of the end of the world, will answer that question.",
                 "Action & Adventure",
                 "2015",
                 "43m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wGFUewXPeMErCe2xnCmmLEiHOGh.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wGFUewXPeMErCe2xnCmmLEiHOGh.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/zrMCOQnzIgGyBtGCdMPom9bOw0r.jpg"
             )
         )
         tvMovies.add(
@@ -49,7 +52,8 @@ object DataTVShow {
                 "Action & Adventure",
                 "2018",
                 "43m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lcuCED5Ky2uM5VE6wILOwt5FEb0.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lcuCED5Ky2uM5VE6wILOwt5FEb0.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/PB1agKtni7zo4fea8yk6y4iE5L.jpg"
             )
         )
         tvMovies.add(
@@ -60,7 +64,8 @@ object DataTVShow {
                 "Action & Adventure",
                 "2018",
                 "43m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7aWmC7BjwBFgIKA77VqrXyRPicJ.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7aWmC7BjwBFgIKA77VqrXyRPicJ.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/uoBXmXoN1iDFbN0zFUtV5QLSqJ2.jpg"
             )
         )
         tvMovies.add(
@@ -71,7 +76,8 @@ object DataTVShow {
                 "Comedy, Drama",
                 "1989",
                 "22m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2IWouZK4gkgHhJa3oyYuSWfSqbG.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2IWouZK4gkgHhJa3oyYuSWfSqbG.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/cuw5FAAVtEcdKfT3HxG1BOc56k0.jpg"
             )
         )
         tvMovies.add(
@@ -82,7 +88,8 @@ object DataTVShow {
                 "Drama, Fantasy",
                 "2014",
                 "44m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jeruqNWhqRqOR1QyqdQdHunrvU5.jpg"
             )
         )
         tvMovies.add(
@@ -93,7 +100,8 @@ object DataTVShow {
                 "Action & Adventure",
                 "2017",
                 "42m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ushSkKB8aeLsyyW2c7S7CCmEmRA.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ushSkKB8aeLsyyW2c7S7CCmEmRA.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/AuY5Wuiwgc2CeuzM0I2poSe4E0x.jpg"
             )
         )
         tvMovies.add(
@@ -104,7 +112,8 @@ object DataTVShow {
                 "Animation, Comedy",
                 "1989",
                 "26m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f2zhRLqwRLrKhEMeIM7Z5buJFo3.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f2zhRLqwRLrKhEMeIM7Z5buJFo3.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/s9xZojg7pNDv26hzvi0Lgt5esWC.jpg"
             )
         )
         tvMovies.add(
@@ -115,7 +124,8 @@ object DataTVShow {
                 "Animation, Comedy",
                 "2002",
                 "24m",
-                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rgHWkZVyvxMBOSYgj585pIx6qAn.jpg"
+                "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rgHWkZVyvxMBOSYgj585pIx6qAn.jpg",
+                "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/koY8N9Y8IcLlb2eJXz50X1hFUL5.jpg"
             )
         )
         return tvMovies

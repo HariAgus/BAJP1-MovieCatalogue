@@ -18,7 +18,6 @@ import org.hamcrest.Matcher
 import org.junit.Before
 import org.junit.Test
 
-
 class HomeActivityTest {
 
     private val dummyMovie = DataMovies.generateDummyMovies()
@@ -29,7 +28,7 @@ class HomeActivityTest {
      * Setup Preview
      */
     @Before
-    fun setup() {
+    fun setUp() {
         ActivityScenario.launch(HomeActivity::class.java)
     }
 
@@ -86,6 +85,10 @@ class HomeActivityTest {
         onView(withId(R.id.tvReleaseDateDetail)).apply {
             check(matches(isDisplayed()))
             check(matches(withText(dummyMovie[0].release)))
+        }
+        onView(withId(R.id.imgDetail)).apply {
+            check(matches(isDisplayed()))
+            check(matches(withContentDescription(dummyMovie[0].image)))
         }
         onView(withId(R.id.tvCategoryDetail)).apply {
             check(matches(isDisplayed()))
