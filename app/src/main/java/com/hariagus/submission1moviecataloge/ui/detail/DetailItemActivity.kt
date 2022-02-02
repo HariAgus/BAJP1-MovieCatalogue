@@ -24,7 +24,7 @@ class DetailItemActivity : AppCompatActivity() {
             MOVIE -> {
                 val movieViewModel = ViewModelProvider(
                     this, ViewModelProvider.NewInstanceFactory()
-                ).get(MovieViewModel::class.java)
+                )[MovieViewModel::class.java]
                 dataDetail(
                     movieViewModel.detailMovie(
                         intent.getIntExtra(ID_DATA, 0)
@@ -34,7 +34,7 @@ class DetailItemActivity : AppCompatActivity() {
             TV_SHOW -> {
                 val tvShowViewModel = ViewModelProvider(
                     this, ViewModelProvider.NewInstanceFactory()
-                ).get(TvShowViewModel::class.java)
+                )[TvShowViewModel::class.java]
                 dataDetail(
                     tvShowViewModel.detailTvShow(
                         intent.getIntExtra(ID_DATA, 0)

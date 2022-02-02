@@ -1,12 +1,11 @@
 package com.hariagus.submission1moviecataloge.ui.home
 
 import androidx.test.core.app.ActivityScenario
-import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions.click
-import androidx.test.espresso.matcher.ViewMatchers.withText
+import androidx.test.espresso.matcher.ViewMatchers.withContentDescription
 import com.adevinta.android.barista.assertion.BaristaVisibilityAssertions.assertDisplayed
 import com.adevinta.android.barista.interaction.BaristaClickInteractions.clickOn
 import com.adevinta.android.barista.interaction.BaristaListInteractions.clickListItem
+import com.adevinta.android.barista.interaction.BaristaListInteractions.scrollListToPosition
 import com.hariagus.submission1moviecataloge.R
 import com.hariagus.submission1moviecataloge.utils.DataMovies
 import com.hariagus.submission1moviecataloge.utils.DataTVShow
@@ -40,7 +39,7 @@ class HomeActivityTest {
     @Test
     fun loadDataMovie() {
         assertDisplayed(R.id.rvMovie)
-        clickListItem(R.id.rvMovie, dummyMovie.size)
+        scrollListToPosition(R.id.rvMovie, dummyMovie.size)
     }
 
     /**
@@ -50,7 +49,7 @@ class HomeActivityTest {
     fun loadDataTvShow() {
         clickOn("TV SHOW")
         assertDisplayed(R.id.rvTvShow)
-        clickListItem(R.id.rvTvShow, dummyTvShow.size)
+        scrollListToPosition(R.id.rvTvShow, dummyTvShow.size)
     }
 
     /**
@@ -59,12 +58,12 @@ class HomeActivityTest {
     @Test
     fun loadDetailMovie() {
         clickListItem(R.id.rvMovie, 0)
-        assertDisplayed(R.id.tvTitleDetail)
-        assertDisplayed(R.id.tvReleaseDateDetail)
-        assertDisplayed(R.id.imgDetail)
-        assertDisplayed(R.id.tvCategoryDetail)
-        assertDisplayed(R.id.tvDurationDetail)
-        assertDisplayed(R.id.tvDescDetail)
+        assertDisplayed(R.id.tvTitleDetail, dummyMovie[0].title.orEmpty())
+        assertDisplayed(R.id.tvReleaseDateDetail, dummyMovie[0].release.orEmpty())
+        assertDisplayed(withContentDescription(R.string.content_desc_poster))
+        assertDisplayed(R.id.tvCategoryDetail, dummyMovie[0].category.orEmpty())
+        assertDisplayed(R.id.tvDurationDetail, dummyMovie[0].duration.orEmpty())
+        assertDisplayed(R.id.tvDescDetail, dummyMovie[0].description.orEmpty())
     }
 
     /**
@@ -73,14 +72,13 @@ class HomeActivityTest {
     @Test
     fun loadDetailTvShow() {
         clickOn("TV SHOW")
-        onView(withText("TV SHOW")).perform(click())
         clickListItem(R.id.rvTvShow, 0)
-        assertDisplayed(R.id.tvTitleDetail)
-        assertDisplayed(R.id.tvReleaseDateDetail)
-        assertDisplayed(R.id.imgDetail)
-        assertDisplayed(R.id.tvCategoryDetail)
-        assertDisplayed(R.id.tvDurationDetail)
-        assertDisplayed(R.id.tvDescDetail)
+        assertDisplayed(R.id.tvTitleDetail, dummyTvShow[0].title.orEmpty())
+        assertDisplayed(R.id.tvReleaseDateDetail, dummyTvShow[0].release.orEmpty())
+        assertDisplayed(withContentDescription(R.string.content_desc_poster))
+        assertDisplayed(R.id.tvCategoryDetail, dummyTvShow[0].category.orEmpty())
+        assertDisplayed(R.id.tvDurationDetail, dummyTvShow[0].duration.orEmpty())
+        assertDisplayed(R.id.tvDescDetail, dummyTvShow[0].description.orEmpty())
     }
 
 }

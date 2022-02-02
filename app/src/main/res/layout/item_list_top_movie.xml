@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="240dp"
-    android:layout_margin="@dimen/dimen_8dp"
+    android:layout_margin="@dimen/dimen_16dp"
     app:cardCornerRadius="@dimen/dimen_22dp">
 
     <ImageView

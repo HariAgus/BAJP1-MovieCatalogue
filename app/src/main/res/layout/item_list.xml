@@ -21,6 +21,7 @@
             android:src="@color/purple_700"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/content_desc_poster"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -54,18 +55,19 @@
                 android:orientation="horizontal"
                 app:layout_constraintStart_toEndOf="@id/ivMovie"
                 app:layout_constraintTop_toBottomOf="@id/tvTitleMovie"
-                tools:ignore="NotSibling">
+                tools:ignore="NotSibling,UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/dimen_22dp"
+                    android:contentDescription="@string/content_desc_date"
                     android:src="@drawable/ic_date" />
 
                 <TextView
                     android:id="@+id/tvReleaseDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_gravity="center"
                     android:layout_marginStart="@dimen/dimen_8dp"
                     android:fontFamily="@font/poppins"
                     android:textAlignment="center"
@@ -81,18 +83,19 @@
                 android:orientation="horizontal"
                 app:layout_constraintStart_toEndOf="@id/ivMovie"
                 app:layout_constraintTop_toBottomOf="@id/ll_release"
-                tools:ignore="NotSibling">
+                tools:ignore="NotSibling,UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/dimen_22dp"
+                    android:contentDescription="@string/content_desc_category"
                     android:src="@drawable/ic_category" />
 
                 <TextView
                     android:id="@+id/tvCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_gravity="center"
                     android:layout_marginStart="@dimen/dimen_8dp"
                     android:fontFamily="@font/poppins"
                     android:textAlignment="center"

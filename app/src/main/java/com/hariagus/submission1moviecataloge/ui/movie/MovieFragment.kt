@@ -35,7 +35,7 @@ class MovieFragment : Fragment() {
 
         viewModel = ViewModelProvider(
             this, ViewModelProvider.NewInstanceFactory()
-        ).get(MovieViewModel::class.java)
+        )[MovieViewModel::class.java]
 
         movieAdapter.setData(viewModel.getMovies())
 

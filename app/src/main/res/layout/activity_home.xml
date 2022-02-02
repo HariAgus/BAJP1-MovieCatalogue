@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     tools:context=".ui.home.HomeActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -35,32 +34,41 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:contentDescription="@string/content_desc_language"
                 android:src="@drawable/ic_change_language" />
         </LinearLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.smarteist.autoimageslider.SliderView
-        android:id="@+id/topCinema"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_banner"
-        android:layout_margin="@dimen/dimen_8dp"
+        android:id="@+id/linearLayoutBanner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/appbarHome"
-        app:sliderAnimationDuration="800"
-        app:sliderAutoCycleDirection="back_and_forth"
-        app:sliderAutoCycleEnabled="true"
-        app:sliderIndicatorAnimationDuration="600"
-        app:sliderIndicatorGravity="center_horizontal|bottom"
-        app:sliderIndicatorMargin="15dp"
-        app:sliderIndicatorOrientation="horizontal"
-        app:sliderIndicatorPadding="2dp"
-        app:sliderIndicatorRadius="1dp"
-        app:sliderIndicatorSelectedColor="@color/primary"
-        app:sliderIndicatorUnselectedColor="#FFF"
-        app:sliderScrollTimeInSec="3"
-        app:sliderStartAutoCycle="true" />
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/topCinema"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_banner"
+            android:layout_margin="@dimen/dimen_8dp"
+            app:sliderAnimationDuration="800"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="2dp"
+            app:sliderIndicatorRadius="1dp"
+            app:sliderIndicatorSelectedColor="@color/primary"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="3"
+            app:sliderStartAutoCycle="true" />
+
+    </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayoutHome"
@@ -69,7 +77,7 @@
         android:background="@color/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topCinema"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutBanner"
         app:tabSelectedTextColor="@color/primary"
         app:tabTextColor="@color/textColor" />
 
@@ -77,6 +85,7 @@
         android:id="@+id/homeViewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

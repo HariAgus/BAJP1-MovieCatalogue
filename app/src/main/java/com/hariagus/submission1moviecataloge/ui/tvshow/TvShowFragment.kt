@@ -35,7 +35,7 @@ class TvShowFragment : Fragment() {
 
         viewModel = ViewModelProvider(
             this, ViewModelProvider.NewInstanceFactory()
-        ).get(TvShowViewModel::class.java)
+        )[TvShowViewModel::class.java]
 
         tvShowAdapter.setData(viewModel.getTvShow())
 

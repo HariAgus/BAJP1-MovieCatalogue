@@ -4,10 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/fg_card.xml" value="0.117" />
+        <entry key="app/src/main/res/drawable/bg_bottom_nav.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/fg_card.xml" value="0.117" />
+        <entry key="app/src/main/res/drawable/ic_baseline_language_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_broken_image_black.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_error.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/item_list_top_movie.xml" value="0.117" />
-        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.41304347826086957" />
+        <entry key="app/src/main/res/drawable/nav_item_color.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/shadow.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.22137404580152673" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_movie.xml" value="0.20364583333333333" />
         <entry key="app/src/main/res/layout/fragment_tv_show.xml" value="0.20364583333333333" />
