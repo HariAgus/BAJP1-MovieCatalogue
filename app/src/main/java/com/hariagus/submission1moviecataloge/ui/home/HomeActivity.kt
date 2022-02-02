@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import com.hariagus.submission1moviecataloge.R
 import com.hariagus.submission1moviecataloge.databinding.ActivityHomeBinding
+import com.hariagus.submission1moviecataloge.ui.home.topmovie.TopMovieAdapter
+import com.hariagus.submission1moviecataloge.utils.DataMovies
 
 class HomeActivity : AppCompatActivity() {
 
@@ -17,6 +19,7 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbarHome)
+        binding.topCinema.startAutoCycle()
 
         val viewPageAdapter = HomeViewPagerAdapter(
             supportFragmentManager, lifecycle
@@ -32,10 +35,21 @@ class HomeActivity : AppCompatActivity() {
             }
         }.attach()
 
+        onClick()
+        setupBanner()
+    }
+
+    private fun onClick() {
         binding.ivChangeLanguage.setOnClickListener {
             val intent = Intent(Settings.ACTION_LOCALE_SETTINGS)
             startActivity(intent)
         }
+    }
+
+    private fun setupBanner() {
+        val topMovieAdapter = TopMovieAdapter()
+        binding.topCinema.setSliderAdapter(topMovieAdapter)
+        topMovieAdapter.setData(DataMovies.generateDummyMovies().shuffled())
     }
 
 }

@@ -9,4 +9,5 @@
     <dimen name="tvs_18sp">18sp</dimen>
     <dimen name="dimen_8dp">8dp</dimen>
     <dimen name="dimen_22dp">22dp</dimen>
+    <dimen name="dimen_banner">230dp</dimen>
 </resources>

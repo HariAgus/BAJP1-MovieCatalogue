@@ -77,4 +77,12 @@ dependencies {
     def lottieVersion = "3.4.0"
     implementation "com.airbnb.android:lottie:$lottieVersion"
 
+    // Image Slider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+    // Testing Barista
+    androidTestImplementation('com.adevinta.android:barista:4.2.0') {
+        exclude group: 'org.jetbrains.kotlin'
+    }
+
 }

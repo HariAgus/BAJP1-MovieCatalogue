@@ -32,6 +32,7 @@ class TvShowFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         viewModel = ViewModelProvider(
             this, ViewModelProvider.NewInstanceFactory()
         ).get(TvShowViewModel::class.java)

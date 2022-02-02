@@ -13,11 +13,6 @@ import com.hariagus.submission1moviecataloge.utils.loadImageGlide
 
 class DetailItemActivity : AppCompatActivity() {
 
-    companion object {
-        const val ID_DATA = "id_data"
-        const val CLICK = "click"
-    }
-
     private lateinit var binding: ActivityDetailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,6 +54,11 @@ class DetailItemActivity : AppCompatActivity() {
             loadImageGlide(dataMovie.image, imgDetail)
             loadImageGlide(dataMovie.backdrops, imgBackdrop)
         }
+    }
+
+    companion object {
+        const val ID_DATA = "id_data"
+        const val CLICK = "click"
     }
 
 }
