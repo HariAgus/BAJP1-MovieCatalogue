@@ -13,11 +13,6 @@ import com.hariagus.submission1moviecataloge.utils.loadImageGlide
 
 class DetailItemActivity : AppCompatActivity() {
 
-    companion object {
-        const val ID_DATA = "id_data"
-        const val CLICK = "click"
-    }
-
     private lateinit var binding: ActivityDetailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +24,7 @@ class DetailItemActivity : AppCompatActivity() {
             MOVIE -> {
                 val movieViewModel = ViewModelProvider(
                     this, ViewModelProvider.NewInstanceFactory()
-                ).get(MovieViewModel::class.java)
+                )[MovieViewModel::class.java]
                 dataDetail(
                     movieViewModel.detailMovie(
                         intent.getIntExtra(ID_DATA, 0)
@@ -39,7 +34,7 @@ class DetailItemActivity : AppCompatActivity() {
             TV_SHOW -> {
                 val tvShowViewModel = ViewModelProvider(
                     this, ViewModelProvider.NewInstanceFactory()
-                ).get(TvShowViewModel::class.java)
+                )[TvShowViewModel::class.java]
                 dataDetail(
                     tvShowViewModel.detailTvShow(
                         intent.getIntExtra(ID_DATA, 0)
@@ -59,6 +54,11 @@ class DetailItemActivity : AppCompatActivity() {
             loadImageGlide(dataMovie.image, imgDetail)
             loadImageGlide(dataMovie.backdrops, imgBackdrop)
         }
+    }
+
+    companion object {
+        const val ID_DATA = "id_data"
+        const val CLICK = "click"
     }
 
 }

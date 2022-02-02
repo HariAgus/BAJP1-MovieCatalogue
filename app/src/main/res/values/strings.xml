@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Submission1MovieCataloge</string>
+    <string name="app_name">Submission 1 Movie Catalogue</string>
     <string name="movie">Movie</string>
     <string name="setting">Setting</string>
     <string name="tv_show">TV Show</string>
@@ -11,4 +11,14 @@
     <string name="tvhShow_title">TV SHOW</string>
     <string name="title_splashScreen">CinemaQu</string>
     <string name="overview">Overview</string>
+
+    <!-- Content Description -->
+    <string name="content_desc_backdrop" translatable="false">Image Backdrop</string>
+    <string name="content_desc_date" translatable="false">Image Date</string>
+    <string name="content_desc_category" translatable="false">Image Category</string>
+    <string name="content_desc_time" translatable="false">Image Time</string>
+    <string name="content_desc_poster" translatable="false">Image Poster</string>
+    <string name="content_desc_language" translatable="false">Image Language</string>
+    <string name="content_desc_sscreen" translatable="false">Image Splash Screen</string>
+
 </resources>

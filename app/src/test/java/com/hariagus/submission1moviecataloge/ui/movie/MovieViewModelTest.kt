@@ -19,8 +19,7 @@ class MovieViewModelTest {
     private val category = "Action, Adventure"
     private val release = "14 February 2019"
     private val duration = "2h 42m"
-    private val image =
-        "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg"
+    private val image = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg"
 
     @Before
     fun setUp() {

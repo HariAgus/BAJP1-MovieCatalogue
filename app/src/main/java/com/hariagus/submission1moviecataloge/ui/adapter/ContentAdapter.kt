@@ -1,5 +1,6 @@
 package com.hariagus.submission1moviecataloge.ui.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -19,10 +20,12 @@ class ContentAdapter(private val idAdapter: Int) : RecyclerView.Adapter<ContentA
 
     private var listData = ArrayList<MovieEntity>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setData(dataMovie: List<MovieEntity>) {
         listData.apply {
             clear()
             addAll(dataMovie)
+            notifyDataSetChanged()
         }
     }
 

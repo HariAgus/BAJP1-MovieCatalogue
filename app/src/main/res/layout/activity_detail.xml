@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container_detail"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/background">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="@color/background"
         android:layout_height="match_parent">
 
         <ImageView
@@ -20,6 +20,7 @@
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/content_desc_backdrop"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
@@ -38,8 +39,9 @@
                 android:id="@+id/imgDetail"
                 android:layout_width="@dimen/dimen_150dp"
                 android:layout_height="@dimen/dimen_210dp"
-                android:contentDescription="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg"
+                android:contentDescription="@string/content_desc_poster"
                 android:scaleType="centerCrop"
+                android:tag="@string/content_desc_poster"
                 android:src="@color/purple_700" />
 
         </androidx.cardview.widget.CardView>
@@ -89,11 +91,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_8dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/dimen_22dp"
+                    android:contentDescription="@string/content_desc_date"
                     android:src="@drawable/ic_date" />
 
                 <TextView
@@ -112,11 +116,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_8dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/dimen_22dp"
+                    android:contentDescription="@string/content_desc_category"
                     android:src="@drawable/ic_category" />
 
                 <TextView
@@ -135,11 +141,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_8dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/dimen_22dp"
+                    android:contentDescription="@string/content_desc_time"
                     android:src="@drawable/ic_time" />
 
                 <TextView
